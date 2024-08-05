@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #333999, #ff00cc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container {
+    height: 95vh;
+    width: 450px;
+    background: rgba(255, 255, 255, .35);
+    border-radius: 10px;
+    padding: 4rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-5deg);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo,
+.login-card-header,
+.login-card-footer {
+    text-align: center;
+}
+
+.login-card-header {
+    margin-bottom: 2rem;
+}
+
+.login-card-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.login-card-header p {
+    font-size: 1rem;
+    opacity: .8;
+}
+
+.login-card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-item i {
+    opacity: 0.6;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.432);
+    color: #fff;
+}
+.form-item input:active{
+    background: rgb(255, 255, 255);
+
+}
+
+.form-item input::placeholder {
+    color: #000;
+}
+
+.form-item-other {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.login-card-footer {
+    margin-top: 2rem;
+}
+button{
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: inherit;
+    box-shadow: 0 0 5px rgba(19, 16, 16, 0.15);
+    cursor: pointer;
+    font-size: large;
+}
+@media (max-width: 768px) {
+    body {
+        margin: 1rem;
+    }
+
+    .container {
+        width: 60vw;
+        height: 99vh;
+        padding: 2rem;
+    }
+}
+
+@media  screen and (max-width:450px) {
+    body{
+        margin: 2rem;
+        
+    }
+    .container{
+        width: 80vw;
+    
+    }
+    
+}
